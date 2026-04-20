@@ -9,6 +9,10 @@
 		content="Программа форума, спикеры, партнеры и регистрация участников. 15 мая 2026 года, Липецк.">
 	<meta property="og:type" content="website">
 
+
+	<link rel="icon" type="image/png" href="../images/icons/favicon-light.png" media="(prefers-color-scheme: light)">
+	<link rel="icon" type="image/png" href="../images/icons/favicon-dark.png" media="(prefers-color-scheme: dark)">
+
 	<link rel="stylesheet" href="css/hystmodal.min.css">
 
 	<link rel="stylesheet" href="css/styles.css">
@@ -37,6 +41,18 @@
 				</ul>
 			</nav>
 		</div>
+		<ul class="header__cta">
+			<li>
+				<a href="https://max.ru/join/cnInQxuEsc_ySeJdUsdtpibqpQrAMF0H73nx2m1dD18" target="_blank">
+					<img src="../../images/icons/max-messenger.svg" alt="icon: max">
+				</a>
+			</li>
+			<li>
+				<a href="https://t.me/LipBusinessForum" target="_blank">
+					<img src="../../images/icons/telegram-messenger.svg" alt="icon: telegram">
+				</a>
+			</li>
+		</ul>
 	</div>
 </header> <!-- Включение шапки -->
 		<main class="page">
@@ -52,7 +68,7 @@
 								<h1 class="hero__title">Липецкий бизнес форум</h1>
 								<p class="hero__text">Сила предпринимательских объединений</p>
 								<div class="hero__cta">
-									<button data-hystmodal="#callback-form">
+									<a href="#callback">
 										<span>Принять участие</span>
 										<svg width="17" height="17" viewBox="0 0 17 17" fill="none"
 											xmlns="http://www.w3.org/2000/svg">
@@ -60,7 +76,7 @@
 												d="M4.89715 1.15427C4.89715 0.516784 5.41394 0 6.05142 0H15.8457C16.4832 0 17 0.516784 17 1.15427V10.9486C17 11.5861 16.4832 12.1028 15.8457 12.1028C15.2082 12.1028 14.6915 11.5861 14.6915 10.9486V3.94092L1.97046 16.6619C1.51969 17.1127 0.788848 17.1127 0.338078 16.6619C-0.112693 16.2112 -0.112693 15.4803 0.338078 15.0295L13.0591 2.30854H6.05142C5.41394 2.30854 4.89715 1.79176 4.89715 1.15427Z"
 												fill="white" />
 										</svg>
-									</button>
+									</a>
 								</div>
 								<img src="../images/hero-bg-desktop.png" alt="image" class="hero__desktop-bg">
 							</div>
@@ -785,16 +801,19 @@
 				<nav class="footer__menu">
 					<ul>
 						<li>
-							<a href="#">Программа форума</a>
+							<a href="#forum">Программа форума</a>
 						</li>
 						<li>
-							<a href="#">Спикеры</a>
+							<a href="#speakers">Спикеры</a>
 						</li>
 						<li>
-							<a href="#">Партнеры</a>
+							<a href="#m-partners">Партнеры</a>
 						</li>
 						<li>
-							<a href="#">Контакты</a>
+							<a href="#callback">Контакты</a>
+						</li>
+						<li>
+							<button type="button" data-hystmodal="#callback-form">Регистрация для СМИ</button>
 						</li>
 					</ul>
 				</nav>
@@ -803,7 +822,7 @@
 				<p class="footer__copywrite">© 2026 Липецкий бизнес форум</p>
 				<ul>
 					<li>
-						<a href="#">Политика конфиденциальности</a>
+						<a href="privacy.html">Политика конфиденциальности</a>
 					</li>
 					<li>
 						<a href="#">Сайт разработан - <span>Шубин.гуру</span></a>
